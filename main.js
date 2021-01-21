@@ -5,9 +5,11 @@ function startClock() {
   let mins = date.getMinutes();
   let seconds = date.getSeconds();
   let session = "AM";
-  if (hours >= 12) {
+  if (hours > 12) {
+    if(hours>=12){
+      session = "PM";
+    }
     hours = hours - 12;
-    session = "PM";
   }
   let time =
     (hours <= 9 ? "0" + hours : hours) +
