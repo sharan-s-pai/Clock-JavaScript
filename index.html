@@ -18,6 +18,58 @@
         <button class="btn btn-primary" id="stop">Stop</button>
         <button class="btn btn-primary" id="reset">Reset</button>
       </div>
+      <div>
+        <h1 class="text-center display-1 mb-5 bg-primary">TIMER</h1>
+        <div id="message"></div>
+        <form class="text-center">
+          <div class="form-row">
+            <div class="col">
+              <input
+                type="text"
+                id="hour1"
+                class="form-control"
+                placeholder="hh"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                id="min1"
+                class="form-control"
+                placeholder="mm"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                id="sec1"
+                class="form-control"
+                placeholder="ss"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary mt-3 text-center"
+            id="submit"
+            value="set"
+          >
+            set timer
+          </button>
+        </form>
+        <div class="text-center display-3 m-3">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span
+            id="seconds1"
+            >00</span
+          >
+        </div>
+        <br />
+        <div class="text-center">
+          <button class="btn btn-primary mr-3" id="start1">Start</button>
+          <button class="btn btn-primary mr-3" id="stop1">Stop</button>
+          <button class="btn btn-primary" id="reset1">Reset</button>
+        </div>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
